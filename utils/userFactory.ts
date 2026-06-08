@@ -1,6 +1,17 @@
 export function generateUser() {
+  const timestamp = Date.now();
+
   return {
-    username: `user_${Date.now()}`,
-    password: "admin"
+    firstName: "Shubh",
+    lastName: "Automation",
+    address: "Melbourne",
+    city: "Melbourne",
+    state: "VIC",
+    zipCode: "3000",
+    phone: "0400000000",
+    ssn: "123456",
+
+    username: `admin_${timestamp}`,
+    password: "Admin123!"
   };
 }
